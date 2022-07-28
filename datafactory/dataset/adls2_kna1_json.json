@@ -1,24 +1,20 @@
 {
-	"name": "adls2_kna1_parquet",
+	"name": "adls2_kna1_json",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "adls2martinried",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "Parquet",
+		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@concat('kna1_',utcnow(),'.parquet')",
-					"type": "Expression"
-				},
+				"fileName": "@concat('kna1_',utcnow(),'.json')",
 				"folderPath": "kna1",
 				"fileSystem": "raw"
-			},
-			"compressionCodec": "snappy"
+			}
 		},
-		"schema": []
+		"schema": {}
 	}
 }
