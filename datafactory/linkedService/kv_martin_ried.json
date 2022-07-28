@@ -1,0 +1,10 @@
+{
+	"name": "kv_martin_ried",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-martin-ried.vault.azure.net/"
+		}
+	}
+}
