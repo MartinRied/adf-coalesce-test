@@ -1,0 +1,9 @@
+{
+	"name": "df-martin-ried-git",
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eb89a7cb-a21e-4c25-8f89-0f374100cb7e",
+		"tenantId": "d3675d0f-75c9-4863-860e-5ae18b362297"
+	}
+}
