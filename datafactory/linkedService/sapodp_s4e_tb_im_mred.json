@@ -1,0 +1,27 @@
+{
+	"name": "sapodp_s4e_tb_im_mred",
+	"properties": {
+		"annotations": [],
+		"type": "SapOdp",
+		"typeProperties": {
+			"clientId": "400",
+			"language": "DE",
+			"sncMode": false,
+			"userName": "MARI",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "kv_martin_ried",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "s4e-mari-password"
+			},
+			"server": "srv-im-s4e",
+			"systemNumber": "00"
+		},
+		"connectVia": {
+			"referenceName": "tb-im-mred",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
