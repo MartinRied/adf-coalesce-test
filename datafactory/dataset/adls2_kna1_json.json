@@ -10,9 +10,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "@concat('kna1_',utcnow(),'.json')",
+				"fileName": "@concat('kna1_',utcnow(),'.json.bz2')",
 				"folderPath": "kna1",
 				"fileSystem": "raw"
+			},
+			"compression": {
+				"type": "bzip2"
 			}
 		},
 		"schema": {}
