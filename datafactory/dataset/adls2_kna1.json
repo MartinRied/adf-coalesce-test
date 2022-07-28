@@ -1,0 +1,24 @@
+{
+	"name": "adls2_kna1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls2martinried",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('kna1_',utcnow(),'_.parquet')",
+					"type": "Expression"
+				},
+				"folderPath": "kna1",
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
