@@ -1,0 +1,15 @@
+{
+	"name": "saptable_kna1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "saptable_s4e_tb_im_mred",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapTableResource",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "KNA1"
+		}
+	}
+}
